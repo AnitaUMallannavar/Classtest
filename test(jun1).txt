@@ -1,0 +1,92 @@
+ 1.a)public static void main(String args[])
+public:Access specifier ,we can access within the package and outside any packege.
+static:non access-specifier,it is keyword also,it has only one copy,no need to create object.
+void:it is retuen type,no need to return any thing.
+main:it is default segnetur(method name).
+String args[]:it is a commondline argument.
+ b).class:-it is a keyword,it is a logical entity or blueprint to create object.it consist of variables,methods,constructor,blocks.
+ Object:-it is realworld entity,it has stats and behaviors. and it is a base class for all other classes.
+JVM:Java virtual machin.
+->it does not exist Physically.
+->it loads the byte code 
+->it executs the byte code
+->it provieds the runtime environment.
+->it is platform dependent.
+JRE:Java Runtime Environment.
+->it exist physically.
+->JRE=jvm+set of libraries.
+->to run java program jre is minimum requared.
+->it is platform dependent.
+JDK:Java Development Kit.
+->it exist physically.
+JDK=jre+set of development tool.
+->it is platform dependent.
+
+2)Revers number
+
+import java.Scanner.*;
+public class ReverNumber{
+
+public static void main(String args[]){
+  Scanner sc=new Scanner(System.in);
+System.out.println(" Enter the Numbers");
+int rev=0;
+int num=sc.nextInt();
+while(num!=0){
+    rev=rev*10+num%10;
+     num=num/10;
+}
+System.out.println("Reversed number is :"+rev);
+}
+}
+
+ 
+3).Reverse String
+
+Import java.lang.*;
+Import java.io.*;
+
+public class ReversString{
+  
+public static void main(String args[]){
+  String name="Anita";
+String rev="";
+
+for(int i=name.length()-1;i>=0;i--){
+    rev=rev+name.charAt(i);
+}
+System.out.println("reversed String is :"+rev);
+}
+}
+
+4).Constructor :it is Special Type of method,which does not have return type.
+->it is same as class name.
+->it is mainly used to initialize the instance variables
+->this keyword is used for constructor chaining.
+Type of constructor:
+1.no argument constructo.
+2.argument or parameter constructor.
+
+
+5).this:it is a keyword.
+->this is used to defferentiat between local variables & instance variables.
+-> this is used in the current instance.
+this(): it is this method.
+->it is used for constructor & method chaining.
+
+6).Main method is static:::-> bcz it has only copy at compailetime
+->no need to creation of object.
+public static void main(String args[])
+public:Access specifier ,we can access within the package and outside any packege.
+static:non access-specifier,it is keyword also,it has only one copy,no need to create object.
+void:it is retuen type,no need to return any thing.
+main:it is default segnetur(method name).
+String args[]:it is a commondline argument.
+
+
+10).yes we can have constructor as private.
+->yes we can overload constructor ,overloading mense we can write  many constructor  same as classname only 
+chainge in the parameter.
+
+12).No We can not use instance variables inside the static method BCZ Static is only Bounded to class ,but instance are not bounded to class.
+
